@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Housing Market Dashboard</title>
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; background: #f4f5f7; color: #1f2937; }
+      .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+      .hero { text-align: center; margin-bottom: 24px; }
+      .status-card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); margin-bottom: 20px; }
+      .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+      .stat-card { background: white; border-radius: 12px; padding: 18px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+      .label { display: block; color: #6b7280; font-size: 0.9rem; margin-bottom: 6px; }
+      .value { font-size: 1.4rem; font-weight: 700; }
+      .button { display: inline-block; margin-top: 12px; padding: 10px 14px; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; }
+      .footer { margin-top: 16px; text-align: center; color: #6b7280; font-size: 0.95rem; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <h1>Housing Market Analysis Dashboard</h1>
+        <p>Interactive insights from the local housing dataset.</p>
+      </div>
+
+      <div class="status-card">
+        <h2>Tableau dashboard preview unavailable</h2>
+        <p>The public Tableau embed could not be reached from this environment, so this page now shows a local summary of the housing data instead.</p>
+        <a class="button" href="{{ tableau_url }}" target="_blank" rel="noopener noreferrer">Open Tableau workbook</a>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="label">Homes analyzed</span>
+          <div class="value">{{ summary.total_homes }}</div>
+        </div>
+        <div class="stat-card">
+          <span class="label">Average price</span>
+          <div class="value">${{ summary.avg_price }}</div>
+        </div>
+        <div class="stat-card">
+          <span class="label">Highest price</span>
+          <div class="value">${{ summary.max_price }}</div>
+        </div>
+        <div class="stat-card">
+          <span class="label">Average sqft</span>
+          <div class="value">{{ summary.avg_sqft }} sq ft</div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Update the Tableau workbook link in the application code when you publish a new version.</p>
+      </div>
+    </div>
+  </body>
+</html>
