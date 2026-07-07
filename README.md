@@ -29,3 +29,9 @@ This Tableau-focused data analysis project explores key housing market drivers, 
 - Visualizations: price distribution, sales trends, renovation impact, feature comparisons
 - Storyboard and responsive dashboard design
 - Web embedding in Flask UI
+
+
+<a href="https://public.tableau.com/views/HousingData_17833555802020/Dashboard1?:showVizHome=no"
+   target="_blank">
+    <button>View Tableau Dashboard</button>
+</a>
