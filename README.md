@@ -31,7 +31,6 @@ This Tableau-focused data analysis project explores key housing market drivers, 
 - Web embedding in Flask UI
 
 
-<a href="https://public.tableau.com/views/HousingData_17833555802020/Dashboard1?:showVizHome=no"
-   target="_blank">
+<a href= "https://drive.google.com/file/d/1nm5u8GRXzakfoYDgFBK0inuTPJyIJUtu/view?usp=sharing">
     <button>View Tableau Dashboard</button>
 </a>
